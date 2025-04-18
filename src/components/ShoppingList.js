@@ -22,7 +22,6 @@ function ShoppingList() {
   function handleAddItem(newItem) {
     setItems((prev) => [...prev, newItem]); // :contentReference[oaicite:2]{index=2}
   }
-
   function handleUpdateItem(updatedItem) {
     setItems((prevItems) =>
       prevItems.map((item) => (item.id === updatedItem.id ? updatedItem : item))
